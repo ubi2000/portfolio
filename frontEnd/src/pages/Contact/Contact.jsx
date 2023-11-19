@@ -30,9 +30,12 @@ const Contact = () => {
       alert('Please enter a valid email address');
       return;
     }
-
     try {
-      await axios.post("http://localhost:4000/email/sendEmail", formData);
+      await axios.post("http://localhost:4000/email/sendEmail", formData,{
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
       alert("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
