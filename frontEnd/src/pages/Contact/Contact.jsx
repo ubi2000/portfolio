@@ -1,7 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
-import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaSquareWhatsapp } from "react-icons/fa6";
+import axios from 'axios';
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await axios.post("http://localhost:4000/email/sendEmail", formData); 
+      alert("Message sent successfully!");
+      
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("Error sending message. Please try again later.");
+    }
+  };
+
   return (
     <>
       <div className=" contact" id="contact">
@@ -24,9 +50,25 @@ const Contact = () => {
                   <div className="row">
                     <h6>
                       Contact With
-                      <BsLinkedin color="blue" size={30} className="ms-2" />
-                      <BsGithub color="black" size={30} className="ms-2" />
-                      <BsFacebook color="blue" size={30} className="ms-2" />
+                      <a
+                        href="https://www.linkedin.com/in/obaid-lone-351970243/"
+                        target="_blank"
+                      >
+                        <BsLinkedin color="blue" size={30} className="ms-2" />
+                      </a>
+                      <a href="https://github.com/ubi2000/" target="_blank">
+                        <BsGithub color="black" size={30} className="ms-2" />{" "}
+                      </a>
+                      <a
+                        href="https://api.whatsapp.com/send?phone=6006621876"
+                        target="_blank"
+                      >
+                        <FaSquareWhatsapp
+                          color="black"
+                          size={30}
+                          className="ms-2"
+                        />{" "}
+                      </a>
                     </h6>
                   </div>
 
@@ -41,8 +83,8 @@ const Contact = () => {
                       name="name"
                       placeholder="Enter your Name"
                       className="mb-3"
-                      // value={name}
-                      // onChange={(e) => setname(e.target.value)}
+                      value={formData.name}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="row px-3">
@@ -51,22 +93,24 @@ const Contact = () => {
                       name="email"
                       placeholder="Enter Your Email Address"
                       className="mb-3"
-                      // value={email}
-                      // onChange={(e) => setEmail(e.target.value)}
+                      value={formData.email}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="row px-3">
                     <textarea
                       type="text"
-                      name="msg"
+                      name="message"
                       placeholder="Write your message"
                       className="mb-3"
-                      // value={msg}
-                      // onChange={(e) => setMsg(e.target.value)}
+                      value={formData.message}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="row px-3">
-                    <button className="button">SEND MESSAGE</button>
+                    <button className="button" onClick={handleSubmit}>
+                      SEND MESSAGE
+                    </button>
                   </div>
                 </div>
               </div>

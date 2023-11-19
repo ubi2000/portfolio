@@ -1,36 +1,43 @@
-import React from 'react'
-import "./About.css"
+import React from "react";
+import "./About.css";
+import myImage from "../../assets/images/myimage.jpg"
 
 const About = () => {
   return (
     <>
-    <div className="about" id="about">
-          <div className="row">
-            <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU"
-                alt="profile_pic"
-              />
-            </div>
-            <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-content">
-              <h1>About me</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                similique sequi velit aperiam totam quis iusto? Deleniti,
-                similique id, sunt porro eos neque ab sit nihil culpa labore
-                perferendis autem rem nostrum asperiores laudantium corrupti
-                atque voluptatibus voluptatum officiis. Soluta alias autem,
-                commodi quos suscipit modi maiores possimus! Placeat maiores
-                assumenda inventore vel doloribus, sunt non. Sequi, corporis
-                harum dolorem numquam, quis nesciunt atque tempore quae?
-                Quibusdam consequatur quidem pariatur hic, ipsam eum beatae
-                labore tempora quis fugit? Vitae, aperiam velit.
-              </p>
-            </div>
+      <div className="about" id="about">
+        <div className="row">
+          <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img">
+            <img
+              src={myImage}
+              alt="profile_pic"
+            />
+          </div>
+          <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-content">
+            <h1>About me</h1>
+            <p>
+               Hello, I'm Obaid Lone, a passionate and creative web
+              developer,with a strong foundation in the MERN stack (MongoDB,
+              Express.js, React, Node.js).
+              <hr />
+              Expertise My expertise lies in Crafting beautiful and intuitive
+              user interfaces using React.js and ensuring a seamless user
+              experience across devices and Designing robust server-side
+              architecture with Node.js and Express.js, and working with MongoDB
+              for efficient data storage and retrieval. Bringing together the
+              frontend and backend to create cohesive and dynamic web
+              applications.
+              <hr />
+               What Sets Me Apart What sets me apart is my commitment to
+              staying updated with the latest industry trends and technologies.
+              I thrive in collaborative environments and enjoy taking on
+              challenges that push my creative and problem-solving boundaries.
+            </p>
           </div>
         </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

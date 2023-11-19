@@ -24,7 +24,7 @@ const Home = () => {
         </div>
         <div className="container home-content">
           <Fade right>
-            <h2>Hi 👋 I'm a</h2>
+            <h2>Hi 👋 I'm a Obaid Lone</h2>
             <h1>
               <Typewriter
                 options={{
@@ -43,13 +43,13 @@ const Home = () => {
             <div className="home-buttons">
               <a
                 className="btn btn-hire"
-                href="https://api.whatsapp.com/send?phone=1234567890"
+                href="https://api.whatsapp.com/send?phone=6006621876"
                 rel="noreferrer"
                 target="_blank"
               >
                 Hire Me
               </a>
-              <a className="btn btn-cv" href={Resume} download="your_name.pdf">
+              <a className="btn btn-cv" href={Resume} download="obaid_resume.pdf">
                 My Resume
               </a>
             </div>
