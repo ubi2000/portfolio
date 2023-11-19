@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Contact.css";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaSquareWhatsapp } from "react-icons/fa6";
-import axios from 'axios';
+import axios from "axios";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,13 +14,26 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const emailRegex = /^\S+@\S+\.\S+$/;
+
+    const { name, email, message } = formData;
+
+    
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      alert("Please enter all required fields");
+      return;
+    }
+    if (!emailRegex.test(email)) {
+      alert('Please enter a valid email address');
+      return;
+    }
 
     try {
-      await axios.post("http://localhost:4000/email/sendEmail", formData); 
+      await axios.post("http://localhost:4000/email/sendEmail", formData);
       alert("Message sent successfully!");
-      
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       console.error("Error sending message:", error);
