@@ -34,7 +34,7 @@ const Contact = () => {
       await axios.post("http://backend-86w1.onrender.com/email/sendEmail", formData,{
         headers: {
           'Content-Type': 'application/json',
-        },
+        }
       })
       alert("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
