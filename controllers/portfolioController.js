@@ -13,15 +13,15 @@ const sendEmailController = async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL_USER, 
-        pass: process.env.EMAIL_PASSWORD, 
+        user: process.env.EMAILUSER, 
+        pass: process.env.EMAILPASSWORD, 
       },
     });
 
     // Email configuration
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.RECIPIENT_EMAIL,
+      from: process.env.EMAILUSER,
+      to: process.env.RECIPIENTEMAIL,
       subject: 'New Contact Form Submission',
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
