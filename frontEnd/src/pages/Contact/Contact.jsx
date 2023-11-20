@@ -124,7 +124,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className="row px-3">
-                    <button className="button" >
+                    <button className="button" onClick={handleSubmit} >
                       SEND MESSAGE
                     </button>
                   </div>
