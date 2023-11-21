@@ -51,7 +51,7 @@ const Projects = () => {
               <div className="card-image">
                 <span className="card-notify-badge">FrontEnd</span>
                 <img
-                  src="https://as2.ftcdn.net/v2/jpg/01/35/04/27/1000_F_135042763_gf9sTHXg4Un1Fv8308pOixA8LV1tL6ur.jpg"
+                  src="https://cdn.pixabay.com/photo/2013/07/13/12/04/android-159109_1280.png"
                   alt="project2"
                   target="_blank"
                 />
@@ -62,11 +62,11 @@ const Projects = () => {
               </div>
               <div className="card-body text-center">
                 <div className="ad-title m-auto">
-                  <h5 className="text-uppercase">Password Generator</h5>
+                  <h5 className="text-uppercase">Robo-Friends</h5>
                 </div>
                 <a
                   className="ad-btn"
-                  href="https://github.com/ubi2000/passwordGenerator/tree/main/passwordGenerator"
+                  href="https://github.com/ubi2000/RoboFriends"
                   target="_blank"
                 >
                   View
@@ -83,11 +83,8 @@ const Projects = () => {
                   alt="project1"
                 />
               </div>
-              <div className="card-image-overly m-auto mt-3">
-                
-                <span className="card-detail-badge">React</span>
-
-              
+              <div className="card-image-overly m-auto mt-3"> 
+                <span className="card-detail-badge">React</span>     
               </div>
               <div className="card-body text-center">
                 <div className="ad-title m-auto">

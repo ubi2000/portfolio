@@ -49,20 +49,19 @@ const WorkExp = () => {
               contentArrowStyle={{
                 borderRight: "7px solid  white",
               }}
-              date="2018 - 2020"
+              date="2021 - 2023"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
               icon={<FcSupport />}
             >
               <h3 className="vertical-timeline-element-title">
-                Website admin and Technical Support
+                Website Admin/Content Management
               </h3>
               <h4 className="vertical-timeline-element-subtitle">GemStones</h4>
               <p>
-                Mainting website and itenary (built in WordPress)
+                Created, updated, and maintained website content.
                 <br />
-                Handling invoices and inventory.
-                <br />
-                Booking rescheduling and cancellation of tickets.
+                Ensured content accuracy, up-to-date information, and alignment
+                with the company's branding and messaging.
               </p>
             </VerticalTimelineElement>
           </VerticalTimeline>

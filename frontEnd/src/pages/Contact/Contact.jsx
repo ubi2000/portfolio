@@ -47,20 +47,20 @@ const Contact = () => {
   return (
     <>
       <div className=" contact" id="contact">
-        <div className="card card0 border-0">
+        {/* <div className="card card0 border-0">
           <div className="row">
             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12">
-              <div className="card1">
-                <div className="row border-line">
+              <div className="card1"> */}
+                {/* <div className="row border-line">
                   <img
                     src="https://img.freepik.com/free-photo/hot-line-contact-us-call-center-search-interface_53876-124009.jpg?w=2000"
                     alt="ocontact"
                     className="image"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6">
+                  /> */}
+                {/* </div> */}
+              {/* </div>
+            </div> */}
+            <div className="col-lg-6 col-md-6" >
               <div className="card2 d-flex card border-0 px-4 py-5">
                 <div className="row">
                   <div className="row">
@@ -70,10 +70,10 @@ const Contact = () => {
                         href="https://www.linkedin.com/in/obaid-lone-351970243/"
                         target="_blank"
                       >
-                        <BsLinkedin color="blue" size={30} className="ms-2" />
+                        <BsLinkedin color="blue" size={40} className="ms-2" />
                       </a>
                       <a href="https://github.com/ubi2000/" target="_blank">
-                        <BsGithub color="black" size={30} className="ms-2" />{" "}
+                        <BsGithub color="black" size={40} className="ms-2" />{" "}
                       </a>
                       <a
                         href="https://api.whatsapp.com/send?phone=6006621876"
@@ -81,7 +81,7 @@ const Contact = () => {
                       >
                         <FaSquareWhatsapp
                           color="black"
-                          size={30}
+                          size={40}
                           className="ms-2"
                         />{" "}
                       </a>
@@ -93,7 +93,12 @@ const Contact = () => {
                     <small className="or text-center">OR</small>
                     <div className="line" />
                   </div>
-                  <div className="row px-3">
+
+                  <div>
+                    <p> <strong>Email :</strong> <a type="email">loneobaid06@gmail.com</a></p>
+                    <p><strong>Phone:</strong> +916006621876</p>
+                  </div>
+                  {/* <div className="row px-3">
                     <input
                       type="text"
                       name="name"
@@ -101,9 +106,9 @@ const Contact = () => {
                       className="mb-3"
                       value={formData.name}
                       onChange={handleChange}
-                    />
+                    /> */}
                   </div>
-                  <div className="row px-3">
+                  {/* <div className="row px-3">
                     <input
                       type="email"
                       name="email"
@@ -112,8 +117,8 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                     />
-                  </div>
-                  <div className="row px-3">
+                  </div> */}
+                  {/* <div className="row px-3">
                     <textarea
                       type="text"
                       name="message"
@@ -122,18 +127,18 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                     />
-                  </div>
-                  <div className="row px-3">
+                  </div> */}
+                  {/* <div className="row px-3">
                     <button className="button" onClick={handleSubmit} >
                       SEND MESSAGE
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
-            </div>
-          </div>
+            {/* </div>
+          </div> */}
         </div>
-      </div>
+      {/* </div> */}
     </>
   );
 };
