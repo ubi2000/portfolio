@@ -66,8 +66,7 @@ const Contact = () => {
                   <div className="row">
                     <h6>
                       Contact With
-                      <a
-                        href="https://www.linkedin.com/in/obaid-lone-351970243/"
+                      <a href="https://linkedin.com/in/obaid-lone-2717522a1"
                         target="_blank"
                       >
                         <BsLinkedin color="blue" size={40} className="ms-2" />
