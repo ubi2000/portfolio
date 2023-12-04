@@ -20,7 +20,7 @@ const About = () => {
               developer,with a strong foundation in the MERN stack (MongoDB,
               Express.js, React, Node.js).
               <hr />
-              Expertise My expertise lies in Crafting beautiful and intuitive
+              My expertise lies in Crafting beautiful and intuitive
               user interfaces using React.js and ensuring a seamless user
               experience across devices and Designing robust server-side
               architecture with Node.js and Express.js, and working with MongoDB
