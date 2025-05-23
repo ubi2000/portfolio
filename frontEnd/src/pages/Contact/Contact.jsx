@@ -75,7 +75,7 @@ const Contact = () => {
                         <BsGithub color="black" size={40} className="ms-2" />{" "}
                       </a>
                       <a
-                        href="https://api.whatsapp.com/send?phone=+916006621876"
+                        href="https://wa.me/916006621876"
                         target="_blank"
                       >
                         <FaSquareWhatsapp

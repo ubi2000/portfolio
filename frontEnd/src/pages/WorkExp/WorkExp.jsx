@@ -17,6 +17,7 @@ const WorkExp = () => {
             Work Experience
           </h2>
           <hr />
+
           <VerticalTimeline lineColor="#1e1e2c">
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
@@ -24,15 +25,40 @@ const WorkExp = () => {
               contentArrowStyle={{
                 borderRight: "7px solid  white",
               }}
-              date="2023 - present"
+              date="Oct 2023 - Present" 
+              iconStyle={{ background: "#1e1e2c", color: "#fff" }}
+              icon={<FcSupport />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Full Stack Developer
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">Gemstone Travels</h4>
+              <p>
+                End-to-end development of scalable web applications using the MERN stack.
+                <br /> Engineered RESTful APIs with Express and Node, ensuring secure and efficient communication
+                between client and server.
+                <br />Built interactive, responsive front-end components using React.js, leveraging Redux and Context
+                API for advanced state management.
+                <br />Integrated JWT-based authentication and role-based access controls to secure the application.
+                <br />
+
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: "white", color: "#1e1e2c" }}
+              contentArrowStyle={{
+                borderRight: "7px solid  white",
+              }}
+              date="Apr 2023 - Sep 2023"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
               icon={<SiReact />}
             >
               <h3 className="vertical-timeline-element-title">
-                MERN Stack Developer intern
+                MERN Stack intern
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
-                Gildware Technlogies
+                Gildware Technologies
               </h4>
               <p>
                 Developed and maintained web applications using the MERN
@@ -49,14 +75,14 @@ const WorkExp = () => {
               contentArrowStyle={{
                 borderRight: "7px solid  white",
               }}
-              date="2021 - 2023"
+              date="Jun 2021 - Apr 2023"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
               icon={<FcSupport />}
             >
               <h3 className="vertical-timeline-element-title">
                 Website Admin/Content Management
               </h3>
-              <h4 className="vertical-timeline-element-subtitle">GemStones</h4>
+              <h4 className="vertical-timeline-element-subtitle">Interface Technologies</h4>
               <p>
                 Created, updated, and maintained website content.
                 <br />

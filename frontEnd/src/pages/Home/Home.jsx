@@ -32,11 +32,11 @@ const Home = () => {
             <div className="home-buttons">
               <a
                 className="btn btn-hire"
-                href="https://api.whatsapp.com/send?phone=+916006621876"
+                href="https://wa.me/916006621876"
                 rel="noreferrer"
                 target="_blank"
               >
-                Hire Me
+                Whatsapp Me
               </a>
               <a className="btn btn-cv" href={Resume} download="obaid_resume.pdf">
                 My Resume

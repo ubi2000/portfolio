@@ -16,10 +16,11 @@ function App() {
       <Layout />
       <div className="container">
         <About />
+        <WorkExp />
         <Education />
         <TechStack />
         <Projects />
-        <WorkExp />
+        
         <Contact />
       </div>
       <div className="footer mb-3 ms-3">
