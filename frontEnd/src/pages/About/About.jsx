@@ -16,7 +16,7 @@ const About = () => {
           <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-content">
             <h1>About me</h1>
             <p>
-               Hello, I'm Obaid Lone, a passionate and creative web
+               Hello, I'm Obaid Nabi Lone, a passionate and creative web
               developer,with a strong foundation in the MERN stack (MongoDB,
               Express.js, React, Node.js).
               <hr />
